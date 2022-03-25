@@ -1,0 +1,110 @@
+body {
+    background-image: url("../resources/changebg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.container {
+    position: absolute;
+
+    width: 400px;
+    height: 370px;
+
+    /* Center form on page horizontally & vertically */
+    top: 45%;
+    left: 47%;
+    margin-top: -150px;
+    margin-left: -150px;
+    position: fixed;
+    background-color: #FF6F61;
+    opacity: 0.7;
+    border-radius: 25px;
+}
+
+
+
+
+.form_login {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 10px;
+
+    margin: 25px;
+    margin-left: 30px;
+    padding: 0;
+}
+
+
+
+
+
+
+.pass_show {
+    position: relative
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pass_show .ptxt {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 10px;
+
+    z-index: 1;
+
+    color: #f36c01;
+
+    margin-top: -10px;
+
+    cursor: pointer;
+
+    transition: .3s ease all;
+
+}
+
+.pass_show .ptxt:hover {
+    color: #333333;
+}
+
+
+
+footer {
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    opacity: 0.7;
+    bottom: 0;
+
+
+}
+
+a.copyright {
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    line-height: 15px;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: center;
+}
+a.copyright:hover {
+    color: rgb(6, 233, 241);
+    text-decoration: none;
+    
+}
+
+

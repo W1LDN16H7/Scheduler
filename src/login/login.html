@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link href="../css/login.css" rel="stylesheet">
+
+
+
+    <title>Login/Register</title>
+</head>
+
+<body>
+    <div class="login-wrap">
+        <div class="login-html">
+
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign
+                In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            <div class="login-form">
+
+                <div class="sign-in-htm">
+                    <form action="../php/login.php" method="POST">
+                        <div class="group">
+                            <label for="user" class="label">Email / Username</label>
+                            <input name="user" id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+
+                            <label for="pass" class="label">Password</label>
+                            <input name="pass" id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input name="check[]" id="check" type="checkbox" class="check" checked>
+                            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign In">
+                        </div>
+                        <div style="margin-top: 40px; margin-bottom: 40px;" class="hr"></div>
+                        <div class="foot-lnk">
+                            <a href="forgotpass.html">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="sign-up-htm">
+                    <form action="../php/register.php" method="POST">
+                        <div class="group">
+                            <label for="user" class="label">Username</label>
+                            <input name="user" id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input name="pass" id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Repeat Password</label>
+                            <input name="confpass" id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Email Address</label>
+                            <input name="email" id="email" type="email" class="input">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign Up">
+                        </div>
+                        <div class="bar"
+                            style="background:rgba(255,255,255,.2); height: 2px; margin-bottom: 20px; margin-top: 10px;">
+                        </div>
+                        <div class="foot-lnk">
+                            <label style="cursor: pointer;" for="tab-1">Already Member?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
